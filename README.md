@@ -5,12 +5,12 @@
 Welcome to my digital space! I specialize in building robust, scalable applications that bridge the gap between innovation and real-world functionality. With expertise in **NestJS, Spring Boot, GraphQL, React, and AI-driven solutions**, I bring ideas to life with precision and efficiency.
 
 ## 💡 What I Do
-- **GraphQL & REST API Development** – Crafting seamless backend architectures with **Spring Boot & NestJS**.
+- **GraphQL & REST API Development** – Crafting seamless backend architectures with **Django & NestJS**.
 - **AI & ML Solutions** – Developing intelligent systems, including **Critical Predictor**, a machine learning project for dam safety.
 - **E-commerce & Digital Platforms** – Creating platforms like **Kukuway**, revolutionizing poultry farming and sales.
 - **Mobile & Web Applications** – Engineering responsive, user-friendly solutions for businesses and organizations.
 - **Automotive & Navigation Systems** – Designing real-time road hazard detection apps using **OpenStreetMap**.
-- **Church & Community Management Systems** – Building dashboards like the **PCEA Nyondia Admin Panel** with automated SMS notifications.
+- **Church & Community Management Systems** – Building dashboards like the **PCEA Nyondia Admin Panel** with automated SMS notifications using NextJs.
 
 ## 🌍 Projects
 ### 🔹 **Critical Predictor**
@@ -29,7 +29,7 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 > A powerful church management system integrating **Daraja API** for automated paybill notifications and SMS outreach.
 
 ## 🔧 Tech Stack
-- **Backend:** NestJS, Spring Boot, GraphQL, REST APIs
+- **Backend:** NestJS, Django Rest Framework, GraphQL, REST APIs
 - **Frontend:** React, Next.js, TailwindCSS
 - **Mobile:** Android Development
 - **Database:** PostgreSQL, MongoDB, Firebase
