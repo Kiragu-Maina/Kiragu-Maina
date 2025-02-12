@@ -40,8 +40,9 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 I'm always open to collaboration, freelance work, and exciting tech discussions. If my work resonates with you, let's connect!
 
 📧 **Email:** kennkyragu@gmail.com  
-🌐 **Portfolio:** 
-🐦 **Twitter:**  
+
+🌐 **Portfolio:** https://kiragu-maina.vercel.app/
+
 💼 **LinkedIn:** https://www.linkedin.com/in/Kiragu-Maina/
 
 ---
