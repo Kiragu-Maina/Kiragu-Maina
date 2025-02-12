@@ -41,11 +41,11 @@ I'm always open to collaboration, freelance work, and exciting tech discussions.
 
 📧 **Email:** kennkyragu@gmail.com  
 
-🌐 **Portfolio:** https://kiragu-maina.vercel.app/
-
 💼 **LinkedIn:** https://www.linkedin.com/in/Kiragu-Maina/
+
+🌐 **Portfolio:** https://kiragu-maina.vercel.app/
 
 ---
 
-This is just a glimpse into what I do—there’s much more under the hood. If you’re curious, let’s talk! 🚀
+This is just a glimpse into what I do—there’s much more *under* the hood ^ ^ ^ ^ ^. If you’re curious, let’s talk! 🚀
 
