@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kennedy Kiragu Maina">
+    <meta name="keywords" content="software development, full-stack engineer, IoT, Machine Learning, web development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennedy Kiragu Maina - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #121212, #2c2c2c);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header,
+        section,
+        footer {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 960px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header:hover,
+        section:hover,
+        footer:hover {
+            transform: translateY(-3px);
+        }
+
+        a {
+            color: #4ca1af;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #80d0c7;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #444, #666, #444);
+            margin: 2rem 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #232526, #414345);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,56.5c0,0,298.666,47.2,600,47.2c301.333,0,600-47.2,600-47.2V0h-1200V56.5z' fill='%231e1e1e'/%3E%3C/svg%3E") repeat-x;
+            animation: wave 10s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: -1200px;
+            }
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: 1;
+            position: relative;
+        }
+
+        header nav img {
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header nav img:hover {
+            transform: scale(1.1);
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            padding: 8px 16px;
+            border-radius: 6px;
+            background-color: rgba(50, 50, 50, 0.8);
+            color: #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: #333;
+            color: #4ca1af;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            color: #cccccc;
+            margin-bottom: 1rem;
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #dddddd;
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Section Styles */
+        section {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        section:nth-child(even) {
+            background-color: #252525;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            border-bottom: 2px solid #4ca1af;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Project Styles */
+        .project {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #2a2a2a;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            align-items: center;
+            border-left: 4px solid #4ca1af;
+        }
+
+        .project:hover {
+            transform: translateX(5px);
+        }
+
+        .project h4 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .project p {
+            color: #cccccc;
+        }
+
+        .project ul {
+            margin-top: 0.5rem;
+        }
+
+        .project li {
+            margin-left: 1.5rem;
+            list-style-type: disc;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Skills Grid Styles */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skills-grid div {
+            padding: 1.5rem;
+            background-color: #2a2a2a;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 6px;
+        }
+
+        .skills-grid h4 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid ul {
+            margin-top: 0.5rem;
+        }
+
+        .skills-grid li {
+            margin-left: 1.5rem;
+            list-style-type: square;
+        }
+
+        /* Experience Styles */
+        #experience h4 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 0.3rem;
+        }
+
+        #experience ul {
+            margin-bottom: 1rem;
+        }
+
+        #experience li {
+            margin-left: 1.5rem;
+            list-style-type: circle;
+        }
+
+        /* Contact Styles */
+        #contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav img {
+                margin-bottom: 1rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project {
+                grid-template-columns: 1fr;
+            }
+
+            .project img {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <img src="profile.jpg" alt="Kiragu Maina" height="120" width="120">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Kennedy Kiragu Maina</h1>
+        <h2>Full-Stack Developer | IoT &amp; Machine Learning Engineer</h2>
+        <p>📧 kennkyragu@gmail.com | 💻 <a href="https://github.com/Kiragu-Maina">GitHub</a> | 👔 <a href="https://linkedin.com/in/Kiragu-Maina">LinkedIn</a></p>
+        <hr>
+    </header>
+
+    <section id="about">
+        <h3>About Me</h3>
+        <p>Results-driven Electronic &amp; Computer Engineer with 5+ years experience in full-stack development, IoT systems, and Machine Learning. Specialized in building scalable solutions using modern technologies with a focus on system efficiency and user-centric design.</p>
+    </section>
+
+    <section id="projects">
+        <h3>Featured Projects</h3>
+
+        <!-- Project 1: Enhancing RAG Systems -->
+        <div class="project">
+            <div>
+                <h4>Enhancing RAG Systems with Fine-Tuned Models</h4>
+                <p>This project focused on creating a Retrieval-Augmented Generation (RAG) system by utilizing a Google’s fine-tuned Gemini model. The goal was to enhance prediction accuracy and system efficiency in analyzing sensor data.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Implemented local TensorFlow.js models for real-time predictions.</li>
+                    <li>Developed advanced preprocessing techniques for sensor data normalization, sequence generation, and 3D tensor reshaping.</li>
+                    <li>Upgraded to Gemini 2.0 Flash Exp model for enhanced query understanding, data retrieval, and summarization.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Next.JS, NestJs, TypeScript, TensorFlow.js, ShadCn UI, DaisyUI, Google Gemini Model, TensorFlow Layers API</p>
+                <p><strong>Code Snippet (Data Preprocessing):</strong></p>
+                <pre>
+<code>
+private preprocessData(data: any) {
+    const normalizedData = data.map((row) => ({
+        ultrasonic: row.ultrasonic / 100,
+        seismic: row.seismic / 100,
+        tilt: row.tilt / 100,
+        load: row.load / 100,
+        pressure: row.pressure / 100,
+        sound: row.sound / 100,
+    }));
+}
+</code>
+                </pre>
+            </div>
+            <img src="rag_image.png" alt="RAG Project">
+        </div>
+
+        <!-- Project 2: Real-Time Delivery Tracking System -->
+        <div class="project">
+            <div>
+                <h4>Real-Time Delivery Tracking System</h4>
+                <p>A React-based application using OpenLayers for real-time visualization of delivery trucks and their destinations.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Live truck location tracking on an interactive map.</li>
+                    <li>Shop markers indicating delivery destinations.</li>
+                    <li>Potential for route optimization and customer notifications.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Next.js, TypeScript, OpenLayers, Vercel</p>
+                <p><a href="https://truck-tracker-demo.com">Live Demo: Truck Tracker</a></p>
+                <p><a href="https://github.com/kiragu-maina/truck-tracker">GitHub Repository</a></p>
+            </div>
+            <img src="truck_image.jpg" alt="Delivery Tracking Project">
+        </div>
+
+        <!-- Project 3: Full-Stack Todo List Application -->
+        <div class="project">
+            <div>
+                <h4>Full-Stack Todo List Application</h4>
+                <p>A user-friendly Todo List application with Google Sign-In integration for seamless authentication and real-time task management.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Google Sign-In and Firebase Authentication.</li>
+                    <li>CRUD operations for managing tasks.</li>
+                    <li>Responsive interface built with Tailwind CSS.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, Firebase Firestore, Vercel</p>
+                <p><a href="https://todolistfrontend-gamma.vercel.app/">Live Demo: Todo List App</a></p>
+                <p><a href="https://github.com/kiragu-maina/todolistfrontend">Github Repository</a></p>
+            </div>
+            <img src="todo_image.jpg" alt="Todo List App">
+        </div>
+
+        <!-- Project 4: Dating App API -->
+        <div class="project">
+            <div>
+                <h4>Dating App API</h4>
+                <p>Built a robust API for a dating application with scalable architecture, real-time database management, and containerized deployment.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>NestJS framework for modular and scalable design.</li>
+                    <li>Prisma ORM for PostgreSQL database operations.</li>
+                    <li>Docker for seamless development and deployment.</li>
+                    <li>Swagger for interactive API documentation.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> NestJS, Prisma, Docker, PostgreSQL, Swagger</p>
+                <p><a href="https://github.com/Kiragu-Maina/datingapp">GitHub Repository</a></p>
+            </div>
+            <img src="dating_api_image.jpg" alt="Dating App API">
+        </div>
+
+        <!-- Project 5: Aviator Game Reimagined -->
+        <div class="project">
+            <div>
+                <h4>Aviator Game Reimagined</h4>
+                <p>Developed an interactive betting game featuring real-time mechanics and engaging user interactions.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Four simultaneous game sessions where players bet on balloons.</li>
+                    <li>Real-time communication powered by WebSockets.</li>
+                    <li>Intuitive user interface for a seamless betting experience.</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Django, Celery, PostgreSQL, Redis, PhaserJS, HTML, CSS, JavaScript</p>
+                <p><a href="https://github.com/Kiragu-Maina/django-crash">GitHub Repository</a></p>
+            </div>
+            <img src="aviator_image.jpg" alt="Aviator Game Project">
+        </div>
+    </section>
+
+    <section id="experience">
+  <h2>My Journey in Tech</h2>
+  <p>
+    Every project is a story of innovation, learning, and impact. Below, I share the journey from my most groundbreaking projects to the diverse roles that have shaped my career.
+  </p>
+
+  <!-- Featured Projects Section -->
+  <h3>Featured Projects</h3>
+
+  <article>
+    <h4>Crash Game Development @ Plema Tech Solutions (2023)</h4>
+    <p>
+      At Plema Tech Solutions, I had the opportunity to design and develop a dynamic crash game that redefined interactive experiences. Using Python and Django as my core tools, I integrated Docker containerization to ensure a robust deployment process. Real-time interactions were brought to life with Django Channels, enabling seamless group operations and an engaging user interface.
+    </p>
+    <ul>
+      <li>Built the backend using Python/Django and Django templating.</li>
+      <li>Enhanced real-time capabilities with Django Channels.</li>
+      <li>Deployed with Docker and Railway, with plans for Kubernetes integration.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h4>Autonomous Robot Navigation @ Jibebe-Jica (2023)</h4>
+    <p>
+      During my internship at Jibebe-Jica, I immersed myself in robotics by developing navigation algorithms that empowered autonomous robots. Working closely with hardware components like the Arduino Mega and various sensors, I was part of a team that integrated cutting-edge hardware and software, ultimately enhancing the autonomy of tractor operations.
+    </p>
+    <ul>
+      <li>Engineered navigation algorithms for robust autonomous performance.</li>
+      <li>Integrated sensor data and motor controls for smooth operation.</li>
+    </ul>
+  </article>
+
+  <!-- Professional Experience Section -->
+  <h3>Professional Experience</h3>
+
+  <article>
+    <h4>Frontend & Backend Developer @ Plema Tech Solutions (June 2023 – November 2023)</h4>
+    <p>
+      At Plema Tech Solutions, my role went beyond just writing code—it was about crafting an experience. I developed a customized crash game that combined creative UI with solid backend logic. By containerizing the application using Docker and deploying on Railway, I ensured that the product was not only innovative but also scalable and reliable.
+    </p>
+    <ul>
+      <li>Developed an engaging crash game with Python, Django, and Docker.</li>
+      <li>Implemented real-time group features via Django Channels.</li>
+      <li>Contributed to planning future Kubernetes integration for seamless scalability.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h4>Software Engineering Intern @ Jibebe-Jica (January 2023 – April 2023)</h4>
+    <p>
+      My time at Jibebe-Jica was a deep dive into robotics and hardware-software integration. I focused on creating robust navigation algorithms that powered autonomous robots, an endeavor that combined technical precision with creative problem-solving. This role solidified my passion for integrating technology in the physical world.
+    </p>
+    <ul>
+      <li>Designed navigation algorithms to guide autonomous robots.</li>
+      <li>Collaborated in the integration of sensor inputs with motor control systems.</li>
+    </ul>
+  </article>
+
+ 
+  <article>
+    <h4>Electronic & Computer Engineering Intern @ Gearbox Academy (January 2022 – April 2022)</h4>
+    <p>
+      At Gearbox Academy, I bridged the gap between the digital and physical worlds by developing a Cabinet Management System. Using a blend of Flask, MQTT, and hardware platforms like Raspberry Pi, Arduino Uno, and ESP32, I delivered a solution that enhanced component storage and improved security.
+    </p>
+    <ul>
+      <li>Developed an integrated Cabinet Management System.</li>
+      <li>Enhanced efficiency and security through effective hardware-software integration.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h4>Electrical Intern & Research Assistant @ Jomo Kenyatta University of Agriculture and Technology (January 2020 – April 2021)</h4>
+    <p>
+      My foundational years at JKUAT were spent gaining hands-on experience with electrical systems and renewable energy research. Whether repairing campus lighting or exploring the potentials of solar and wind energy, I was driven by a commitment to innovation and sustainability.
+    </p>
+    <ul>
+      <li>Performed essential electrical maintenance and generator support.</li>
+      <li>Participated in research on renewable energy systems and power electronics.</li>
+    </ul>
+  </article>
+   <article>
+    <h4>Web & Mobile App Developer @ Njeki Transporters (July 2022 – February 2023)</h4>
+    <p>
+      At Njeki Transporters, I embraced the challenge of developing a delivery routing application that served real users. By combining a Python-Django backend with a Flutter frontend, I created an intuitive platform that streamlined routing and improved overall operational efficiency.
+    </p>
+    <ul>
+      <li>Built and deployed a high-performance delivery routing app.</li>
+      <li>Ensured seamless user experience for a growing base of over 30 active users.</li>
+    </ul>
+  </article>
+
+</section>
+
+<section id="skills">
+  <h3>Technical Skills</h3>
+  <div class="skills-grid">
+    <!-- Languages -->
+    <div>
+      <h4>Languages</h4>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+       <li>Dart</li>
+      </ul>
+    </div>
+    
+    <!-- Frameworks & Libraries -->
+    <div>
+      <h4>Frameworks &amp; Libraries</h4>
+      <ul>
+        <li>Django</li>
+        <li>Django REST Framework</li>
+        <li>Flask</li>
+        <li>Node.js</li>
+        <li>Next.js</li>
+        <li>NestJs</li>
+        <li>React</li>
+        <li>Vue.js</li>
+        
+        <li>Bootstrap</li>
+        <li>Flutter</li>
+      </ul>
+    </div>
+    
+    <!-- Deployment & Hosting / DevOps -->
+    <div>
+      <h4>Deployment &amp; Hosting</h4>
+      <ul>
+        <li>Railway</li>
+        <li>Google Cloud Platform</li>
+        <li>PythonAnywhere</li>
+        <li>Heroku</li>
+        <li>AWS</li>
+        <li>Leapcell</li>
+        <li>Render</li>
+        <li>Docker</li>
+      </ul>
+    </div>
+    
+    <!-- Databases -->
+    <div>
+      <h4>Databases</h4>
+      <ul>
+        <li>PostgreSQL</li>
+        <li>SQLite</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>Supabase</li>
+      </ul>
+    </div>
+    
+    <!-- Embedded Systems & IoT -->
+    <div>
+      <h4>Embedded Systems &amp; IoT</h4>
+      <ul>
+        <li>Arduino (Mega, Uno)</li>
+        <li>Raspberry Pi</li>
+        <li>ESP32</li>
+        <li>MQTT</li>
+        <li>PubSub</li>
+      </ul>
+    </div>
+    
+    <!-- Signal Processing & Control Systems -->
+    <div>
+      <h4>Signal Processing &amp; Control</h4>
+      <ul>
+        <li>MATLAB</li>
+        <li>Simulink</li>
+        <li>PID Controllers</li>
+        <li>Robotics (Autonomous Navigation, Sensor Integration)</li>
+      </ul>
+    </div>
+    
+    <!-- Networking & Telecommunications -->
+    <div>
+      <h4>Networking &amp; Telecommunications</h4>
+      <ul>
+        <li>TCP/IP</li>
+        <li>Network Security</li>
+        <li>Wireless Communication</li>
+        <li>Antennas</li>
+      </ul>
+    </div>
+    
+    <!-- Power Systems -->
+    <div>
+      <h4>Power Systems</h4>
+      <ul>
+        <li>Power Electronics</li>
+        <li>Renewable Energy Systems</li>
+      </ul>
+    </div>
+    
+    <!-- Version Control -->
+    <div>
+      <h4>Version Control</h4>
+      <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Tortoise SVN</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>📧 <a href="mailto:kennkyragu@gmail.com">kennkyragu@gmail.com</a></p>
+        <p>💻 <a href="https://github.com/Kiragu-Maina">GitHub Profile</a></p>
+        <p>👔 <a href="https://linkedin.com/in/Kiragu-Maina">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kennedy Kiragu Maina | Last Updated: February 2025</p>
+        <a href="#top">Back to Top ↑</a>
+    </footer>
+</body>
+
+</html>
