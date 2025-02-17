@@ -19,8 +19,7 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 ### 🔹 **Kukuway**
 > A poultry farming and e-commerce platform for efficient sales and farm management.
 
-### 🔹 **ACME Network & Solar Services**
-> A dual-application platform using React and NestJS to support network and solar energy solutions.
+
 
 ### 🔹 **Road Hazard Detection Car Navigation**
 > A real-time road hazard detection app that guides drivers on potholes, bumps, and road conditions.
