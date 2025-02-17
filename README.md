@@ -22,7 +22,7 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 ### 🔹 **ACME Network & Solar Services**
 > A dual-application platform using React and NestJS to support network and solar energy solutions.
 
-### 🔹 **Neutron Car Navigation**
+### 🔹 **Road Hazard Detection Car Navigation**
 > A real-time road hazard detection app that guides drivers on potholes, bumps, and road conditions.
 
 ### 🔹 **PCEA Nyondia Admin Dashboard**
