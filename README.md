@@ -10,7 +10,7 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 - **E-commerce & Digital Platforms** – Creating platforms like **Kukuway**, revolutionizing poultry farming and sales.
 - **Mobile & Web Applications** – Engineering responsive, user-friendly solutions for businesses and organizations.
 - **Automotive & Navigation Systems** – Designing real-time road hazard detection apps using **OpenStreetMap**.
-- **Church & Community Management Systems** – Building dashboards like the **PCEA Nyondia Admin Panel** with automated SMS notifications using NextJs.
+- **Church & Community Management Systems** – Building dashboards like the **Church Admin Panel** with automated SMS notifications using NextJs.
 
 ## 🌍 Projects
 ### 🔹 **Critical Predictor**
@@ -24,7 +24,7 @@ Welcome to my digital space! I specialize in building robust, scalable applicati
 ### 🔹 **Road Hazard Detection Car Navigation**
 > A real-time road hazard detection app that guides drivers on potholes, bumps, and road conditions.
 
-### 🔹 **PCEA Nyondia Admin Dashboard**
+### 🔹 **Church Admin Dashboard**
 > A powerful church management system integrating **Daraja API** for automated paybill notifications and SMS outreach.
 
 ## 🔧 Tech Stack
