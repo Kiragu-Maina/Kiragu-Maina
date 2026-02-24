@@ -46,5 +46,5 @@ I'm always open to collaboration, freelance work, and exciting tech discussions.
 
 ---
 
-This is just a glimpse into what I do—there’s much more *under* the hood. If you’re curious, let’s talk! 
+This is just a glimpse into what I do. There’s much more *under* the hood. If you’re curious, let’s talk! 
 
